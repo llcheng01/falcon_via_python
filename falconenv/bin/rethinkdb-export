@@ -1,0 +1,10 @@
+#!/home/vagrant/falcon_via_python/falconenv/bin/pypy
+# EASY-INSTALL-ENTRY-SCRIPT: 'rethinkdb==2.1.0-2','console_scripts','rethinkdb-export'
+__requires__ = 'rethinkdb==2.1.0-2'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('rethinkdb==2.1.0-2', 'console_scripts', 'rethinkdb-export')()
+    )
